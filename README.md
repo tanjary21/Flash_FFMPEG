@@ -5,9 +5,14 @@ A convenient, user-friendly command set to run ffmpeg commands from the Desktop 
 
 The project started out during my MSc. studies. I found myself having to frequently convert my data/results into visualizations in nice video formats, or ```.gif```s to save on memory. And using ```ffmpeg``` through the terminal just wasn't becoming a reflex fast enough. Frequent errors, incompatible resolution specs, frame rates etc used to slow me down for stuff that really wasn't supposed to take more than 2 seconds. And so, like any decent engineer, I automated my work flows to save on a resource that's very precious in grad school; time.
 
-At the time, these were mostly simple BASH scripts put into my ```.bashrc```. Since then, I've figured out how to put them into Ubuntu's Desktop UI's context menu. I'm now making this available to all as a ```.deb``` package that Linux users can install.
+At the time, these were mostly simple BASH scripts put into my ```.bashrc```. Since then, I've figured out how to put them into Ubuntu's Desktop UI's context menu. I'm now making this available to all as a ```.deb``` package that Ubuntu users can install.
 
+This also serves me as a way to learn debian packaging.
+
+Tested on:
+* Ubuntu 20.04.1
 ---
+
 * Installation
 * Usage Examples
 * Custom Functionality
