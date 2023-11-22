@@ -11,15 +11,15 @@
 
 ## Usage Examples
 #### MP4 File to GIF:
-demo_media/batch_mp4_to_gif.webm
+demo_media/batch_mp4_to_gif.webm.mov
 
 #### Extract Frames form MP4:
-demo_media/batch_mp4_to_gif.webm
+demo_media/batch_mp4_to_gif.webm.mov
 
 #### Compile Frames to MP4:
-demo_media/batch_mp4_to_gif.webm
+demo_media/batch_mp4_to_gif.webm.mov
 
 #### Downsample MP4
-demo_media/batch_mp4_to_gif.webm
+demo_media/batch_mp4_to_gif.webm.mov
 
 #### Batch Processing:
