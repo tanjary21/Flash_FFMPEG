@@ -46,10 +46,9 @@ https://github.com/tanjary21/Flash_FFMPEG/assets/79201814/fe37d38b-c376-4b54-949
 
 When you right-click on a file(s)/directory(s), the path(s) to those file(s)/directory(s) become the input arguments to the context menu operations. The context menu operations themselves are simply symlinks stored under ```$HOME/.local/share/nautilus/scripts``` which link to ```.sh``` scripts that contain the main functionality. 
 
-Let's explain this better by explaining how you can create your own custom script that slices a ```.mp4``` file into 2, vertically split ```.mp4``` files. 
+Let's explain this better by explaining how you can create your own custom script. The script ```mp4_vertcal_splitter.sh``` slices a ```.mp4``` file into 2, vertically split ```.mp4``` files. 
 
-Download the file ```mp4_vertcal_splitter.sh``` file. This script takes any number of video files as input. You can run it with 
-```./mp4_vertical_splitter.sh video_1.mp4 video_2.mp4 video_3.mp4 ...``` ( make sure the script has execution permissions ). The script then launches a pop-up window using the ```yad``` command, asking you to specify how many vertical sections you want to split your videos into (default of 2). It then runs and writes the sliced video output into individual directories under the selected files' directory.
+Download the file ```mp4_vertcal_splitter.sh``` file. This script can take any number of video files as input. You can run it via the terminal with ```./mp4_vertical_splitter.sh video_1.mp4 video_2.mp4 video_3.mp4 ...``` ( make sure the script has execution permissions ). The script then launches a pop-up window using the ```yad``` package, asking you to specify how many vertical sections you want to split your videos into (default of 2). It then runs and writes the sliced video output into individual directories under the selected files' directory.
 
 Use this file as a guide to write your own custom BASH scripts.
 
@@ -62,3 +61,5 @@ Restart nautilus with the command ```nautilus -q``` ( or restart your PC, if it 
 Now, when you right-click on a file, you will see your custom command appear in the context-menu under ```Scripts --> Flash FFMPEG --> Custom Scripts```.
 
 And that's it!
+
+icons...?
