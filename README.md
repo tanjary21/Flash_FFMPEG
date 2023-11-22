@@ -11,17 +11,15 @@
 
 ## Usage Examples
 #### MP4 File to GIF:
-<video src='demo_media/batch_mp4_to_gif.webm' width=180/>
+demo_media/batch_mp4_to_gif.webm
 
 #### Extract Frames form MP4:
-<video src='demo_media/batch_mp4_to_gif.webm' width=180/>
+demo_media/batch_mp4_to_gif.webm
 
 #### Compile Frames to MP4:
-<video src='demo_media/batch_mp4_to_gif.webm' width=180/>
+demo_media/batch_mp4_to_gif.webm
 
 #### Downsample MP4
-<video src='demo_media/batch_mp4_to_gif.webm' width=180/>
+demo_media/batch_mp4_to_gif.webm
 
 #### Batch Processing:
-:-: | :-:
-<video src='demo_media/batch_mp4_to_gif.webm' width=90/> | <video src='demo_media/batch_mp4_to_gif.webm' width=90/>
