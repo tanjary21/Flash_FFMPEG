@@ -18,7 +18,6 @@ At the time, these were mostly simple BASH scripts put into my ```.bashrc```. Si
 * djcgjhdg
 
 ## Usage Examples
----
 
 #### MP4 File to GIF:
 https://github.com/tanjary21/Flash_FFMPEG/assets/79201814/c461e0a3-bba1-4411-80b3-7e3b3129ce9a
