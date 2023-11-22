@@ -11,7 +11,7 @@
 
 ## Usage Examples
 #### MP4 File to GIF:
-demo_media/batch_mp4_to_gif.webm.mov
+<video src='demo_media/batch_mp4_to_gif.webm.mov' width=180/>
 
 #### Extract Frames form MP4:
 demo_media/batch_mp4_to_gif.webm.mov
