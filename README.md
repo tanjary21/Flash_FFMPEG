@@ -63,3 +63,21 @@ Now, when you right-click on a file, you will see your custom command appear in 
 And that's it!
 
 icons...?
+
+Personal stuff:
+
+# to prepare install:
+```
+rm flash-ffmpeg_0.1-0_amd64.deb
+dpkg-deb --build --root-owner-group flash-ffmpeg_0.1-0_amd64
+sudo dpkg -i flash-ffmpeg_0.1-0_amd64.deb
+```
+
+# to uninstall
+```
+sudo dpkg -r flash-ffmpeg
+sudo mv /var/lib/dpkg/info/flash-ffmpeg.* /tmp/
+sudo dpkg --remove --force-remove-reinstreq flash-ffmpeg
+sudo dpkg --purge flash-ffmpeg
+dpkg -l | grep flash-ffmpeg
+```

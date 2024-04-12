@@ -1,0 +1,15 @@
+#!/bin/sh -e
+
+USER_HOME_DIR=$(getent passwd "$SUDO_USER" | cut -d: -f6)
+
+sudo find "$USER_HOME_DIR/.local/share/nautilus/scripts/Flash FFMPEG" -type l -exec rm {} +
+
+sudo rm -r "$USER_HOME_DIR/.local/share/nautilus/scripts/Flash FFMPEG"
+
+# Full uninstall procedures:
+# sudo dpkg -r flash-ffmpeg;
+# sudo mv /lib/dpkg/info/flash/ffmpeg-tmp.* /var/;
+# sudo dpkg --remove --force-remove-reinstreq flash-ffmpeg;
+# sudo dpkg --purge flash-ffmpeg
+
+

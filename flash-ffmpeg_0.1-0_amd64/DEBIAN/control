@@ -1,0 +1,5 @@
+Package: flash-ffmpeg
+Version: 1.0
+Architecture: amd64
+Maintainer: Taher Anjary <tanjary21@ku.edu.tr>
+Description: Quick access to customizable FFMPEG functions directly from the right-click context menu

@@ -1,0 +1,35 @@
+#!/bin/sh -e
+
+# get user's home directory 
+USER_HOME_DIR=$(getent passwd "$SUDO_USER" | cut -d: -f6)
+
+# build a directory structure for the scripts
+mkdir "$USER_HOME_DIR/.local/share/nautilus/scripts/Flash FFMPEG"
+
+# set icons for the scripts
+# gio set "/usr/share/flash_ffmpeg/scripts/convert_mp4_to_gif.sh" metadata::custom-icon "file:///usr/share/icons/flash_ffmpeg/gif.png"
+# gio set "/usr/share/flash_ffmpeg/scripts/extract_frames.sh" metadata::custom-icon "file:///usr/share/icons/flash_ffmpeg/image.png"
+# gio set "/usr/share/flash_ffmpeg/scripts/frames_to_mp4.sh" metadata::custom-icon "file:///usr/share/icons/flash_ffmpeg/reel.png"
+# gio set "/usr/share/flash_ffmpeg/scripts/mp4_downsampler.sh" metadata::custom-icon "file:///usr/share/icons/flash_ffmpeg/video.png"
+
+
+# build symbolic links to the scripts
+sudo ln -s "/usr/share/flash_ffmpeg/scripts/convert_mp4_to_gif.sh" "$USER_HOME_DIR/.local/share/nautilus/scripts/Flash FFMPEG/MP4 to GIF"
+sudo ln -s "/usr/share/flash_ffmpeg/scripts/extract_frames.sh" "$USER_HOME_DIR/.local/share/nautilus/scripts/Flash FFMPEG/MP4 to Frames"
+sudo ln -s "/usr/share/flash_ffmpeg/scripts/frames_to_mp4.sh" "$USER_HOME_DIR/.local/share/nautilus/scripts/Flash FFMPEG/Frames to MP4"
+sudo ln -s "/usr/share/flash_ffmpeg/scripts/mp4_downsampler.sh" "$USER_HOME_DIR/.local/share/nautilus/scripts/Flash FFMPEG/Downsample MP4"
+
+# give the symbolic links the right permissions
+# TODO
+
+# give the symbolic links some icons
+# gvfs-set-attribute -t "$USER_HOME_DIR/.local/share/nautilus/scripts/Flash FFMPEG/MP4 to GIF" metadata::custom-icon "file:///usr/share/icons/flash_ffmpeg/gif.png"
+# gvfs-set-attribute -t "$USER_HOME_DIR/.local/share/nautilus/scripts/Flash FFMPEG/MP4 to Frames" metadata::custom-icon "file:///usr/share/icons/flash_ffmpeg/image.png"
+# gvfs-set-attribute -t "$USER_HOME_DIR/.local/share/nautilus/scripts/Flash FFMPEG/Frames to MP4" metadata::custom-icon "file:///usr/share/icons/flash_ffmpeg/reel.png"
+# gvfs-set-attribute -t "$USER_HOME_DIR/.local/share/nautilus/scripts/Flash FFMPEG/Downsample MP4" metadata::custom-icon "file:///usr/share/icons/flash_ffmpeg/video.png"
+
+
+
+
+
+# It's very immportant to reload nautilus after the installation completes. Use the command: 'nautilus -q'
