@@ -1,7 +1,7 @@
 # Flash FFMPEG
-## Quick-Access FFMPEG operations directly in Ubuntu Desktop GUI Context Menu 
+## Quick-Access FFMPEG operations directly in the Context Menu on Ubuntu's Desktop GUI  
 
-A convenient, user-friendly command set to run ffmpeg commands from the Desktop GUI.
+A convenient, user-friendly command set to run ffmpeg commands from the right-click menu.
 
 Tested on:
 * Ubuntu 20.04.1
