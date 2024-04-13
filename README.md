@@ -29,6 +29,7 @@ This also serves me as a way to learn debian packaging.
 ### Step 1
 * Download the latest release for your system, e.g: `flash-ffmpeg_0.1-0_amd64.deb` file (see panel on the right of this repo)
 * From your terminal, run the command `sudo dpkg -i flash-ffmpeg_0.1-0_amd64.deb`
+* IMPORTANT: Run the command `nautilus -q` to restart the file explorer
 * You are ready to use Flash FFMPEG from your right-click menu!
 
 ---
