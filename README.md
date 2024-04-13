@@ -12,16 +12,19 @@ This also serves me as a way to learn debian packaging.
 Tested on:
 * Ubuntu 20.04.1
 ---
-
+### Sections:
 * Installation
 * Usage Examples
 * Custom Functionality
+* Uninstallation
 
 ---
 ## Installation
 
 ### Step 1
-* djcgjhdg
+* Download the latest release for your system, e.g: `flash-ffmpeg_0.1-0_amd64.deb` file (see panel on the right of this repo)
+* From your terminal, run the command `sudo dpkg -i flash-ffmpeg_0.1-0_amd64.deb`
+* You are ready to use Flash FFMPEG from your right-click menu!
 
 ---
 ## Usage Examples
@@ -62,6 +65,17 @@ Now, when you right-click on a file, you will see your custom command appear in 
 
 And that's it!
 
+## Uninstallation
+* Simply run the command `sudo dpkg -r flash-ffmpeg` from your terminal
+* If the uninstall does not run flawlessly, run the following commands:
+```
+sudo mv /var/lib/dpkg/info/flash-ffmpeg.* /tmp/
+sudo dpkg --remove --force-remove-reinstreq flash-ffmpeg
+sudo dpkg --purge flash-ffmpeg
+```
+* Then, run `dpkg -l | grep flash-ffmpeg`. If nothing is returned, it means Flash FFMPEG was properly removed from your system
+
+<!---
 icons...?
 
 Personal stuff:
@@ -81,3 +95,5 @@ sudo dpkg --remove --force-remove-reinstreq flash-ffmpeg
 sudo dpkg --purge flash-ffmpeg
 dpkg -l | grep flash-ffmpeg
 ```
+-->
+hkh
