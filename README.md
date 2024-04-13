@@ -13,6 +13,7 @@ Tested on:
 * Usage Examples
 * Custom Functionality
 * Uninstallation
+* Future
 
 ---
 ## Backstory
@@ -71,6 +72,7 @@ Now, when you right-click on a file, you will see your custom command appear in 
 
 And that's it!
 
+---
 ## Uninstallation
 * Simply run the command `sudo dpkg -r flash-ffmpeg` from your terminal
 * If the uninstall does not run flawlessly, run the following commands:
@@ -80,6 +82,12 @@ sudo dpkg --remove --force-remove-reinstreq flash-ffmpeg
 sudo dpkg --purge flash-ffmpeg
 ```
 * Then, run `dpkg -l | grep flash-ffmpeg`. If nothing is returned, it means Flash FFMPEG was properly removed from your system
+
+---
+## Future
+* Progress bars
+* Icons/thumbnails
+* Automatic video snipping/stitching in sync with an input audio's salient beat/bpm
 
 <!---
 icons...?
